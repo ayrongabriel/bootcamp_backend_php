@@ -1,0 +1,888 @@
+  /* Template: HTML5-CSS3 -  HTML Landing Page Template
+   Author: Airon Gabriel
+   Created: Jun 2020
+   Description: Digital Innovation One - Bootcamp Backend PHP
+*/
+
+/*****************************************
+Table Of Contents:
+
+01. Geral
+02. Navegação
+03. Header
+04. Serviços
+05. Clientes
+06. Parceiros
+07. time
+08. Contatos
+09. Redes Sociais
+10. Footer
+11. Copyright
+12. Back Top
+******************************************/
+/*********************/
+/*    01. Geral     */
+/*********************/
+  body, p {
+    color: #555; 
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;;
+  }
+  
+  .p-large {
+    font: 400 1.125rem/1.75rem "Open Sans", sans-serif;
+  }
+  
+  .p-small {
+    font: 400 0.875rem/1.5rem "Open Sans", sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    font: 700 2.5rem/3.125rem "Open Sans", sans-serif;
+    letter-spacing: -0.2px;
+  }
+  
+  h2 {
+    color: #333;
+    font: 700 2rem/2.625rem "Open Sans", sans-serif;
+    letter-spacing: -0.2px;
+  }
+  
+  h3 {
+    color: #333;
+    font: 700 1.625rem/2.125rem "Open Sans", sans-serif;
+    letter-spacing: -0.2px;
+  }
+  
+  h4 {
+    color: #333;
+    font: 700 1.375rem/1.75rem "Open Sans", sans-serif;
+    letter-spacing: -0.1px;
+  }
+  
+  h5 {
+    color: #333;
+    font: 700 1.125rem/1.5rem "Open Sans", sans-serif;
+    letter-spacing: -0.1px;
+  }
+  
+  h6 {
+    color: #333;
+    font: 700 1rem/1.375rem "Open Sans", sans-serif;
+    letter-spacing: -0.1px;
+  }
+  
+  .above-heading {
+    color: #124061;
+    font: 700 0.75rem/0.875rem "Open Sans", sans-serif;
+    text-align: center;
+  }
+  
+  .p-heading {
+    margin-bottom: 3.25rem;
+  }
+  
+  .testimonial-text {
+    font: italic 400 1rem/1.625rem "Open Sans", sans-serif;
+  }
+  
+  .testimonial-author {
+    font: 700 1rem/1.625rem "Open Sans", sans-serif;
+    letter-spacing: -0.1px;
+  }
+  
+  .li-space-lg li {
+    margin-bottom: 0.375rem;
+  }
+  
+  .indent {
+    padding-left: 1.25rem;
+  }
+  
+  a {
+    color: #555;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #555;
+    text-decoration: underline;
+  }
+  
+  a.white {
+    color: #fff;
+  }
+  
+  .decorative-line {
+    display: block;
+    width: 5rem;
+    height: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .blue {
+    color: #124061;
+  }
+  
+  .btn-solid-reg {
+    display: inline-block;
+    padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+    border: 0.125rem solid #124061;
+    border-radius: 2rem;
+    background-color: #124061;
+    color: #fff;
+    font: 700 0.875rem/0 "Open Sans", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .btn-solid-reg:hover {
+    background-color: transparent;
+    color: #124061;
+    text-decoration: none;
+  }
+  
+  .btn-solid-lg {
+    display: inline-block;
+    padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+    border: 0.125rem solid #124061;
+    border-radius: 2rem;
+    background-color: #124061;
+    color: #fff;
+    font: 700 0.875rem/0 "Open Sans", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .btn-solid-lg:hover {
+    background-color: transparent;
+    color: #124061;
+    text-decoration: none;
+  }
+  
+  .btn-outline-reg {
+    display: inline-block;
+    padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+    border: 0.125rem solid #124061;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #124061;
+    font: 700 0.875rem/0 "Open Sans", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline-reg:hover {
+    background-color: #124061;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .btn-outline-lg {
+    display: inline-block;
+    padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+    border: 0.125rem solid #124061;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #124061;
+    font: 700 0.875rem/0 "Open Sans", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline-lg:hover {
+    background-color: #124061;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .btn-outline-sm {
+    display: inline-block;
+    padding: 0.875rem 1.5rem 0.875rem 1.5rem;
+    border: 0.125rem solid #124061;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #124061;
+    font: 700 0.875rem/0 "Open Sans", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline-sm:hover {
+    background-color: #124061;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .label-control {
+    position: absolute;
+    top: 0.87rem;
+    left: 1.25rem;
+    color: #555;
+    opacity: 1;
+    font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+    cursor: text;
+    transition: all 0.2s ease;
+  }
+
+  .tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .badge-primary{background-color: #124061;}
+
+/**************************/
+/*     02. Navigação     */
+/**************************/
+.navbar-custom {
+	background-color: #124061;
+	/* box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1); */
+	font: 700 0.875rem/0.875rem "Open Sans", sans-serif;
+	transition: all 0.2s;
+}
+
+.navbar-custom .container {
+	max-width: 87.5rem;
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+    width: 4.4375rem;
+	height: 1.75rem;
+}
+
+.navbar-custom .navbar-brand.logo-text {
+	font: 700 2rem/1.5rem "Open Sans", sans-serif;
+	color: #fff;;
+	text-decoration: none;
+}
+
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-custom .nav-item .nav-link {
+	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	color: #f7f5f5;
+	opacity: 0.8;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item .nav-link.active {
+	color: #fff;
+	opacity: 1;
+}
+
+/* Dropdown Menu */
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-custom .dropdown-toggle:focus { /* removes dropdown outline on focus */
+	outline: 0;
+}
+
+.navbar-custom .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #124061;
+}
+
+.navbar-custom .dropdown-item {
+	color: #f7f5f5;
+	opacity: 0.8;
+	font: 700 0.875rem/0.875rem "Open Sans", sans-serif;
+	text-decoration: none;
+}
+
+.navbar-custom .dropdown-item:hover {
+	background-color: #124061;
+	color: #fff;
+	opacity: 1;
+}
+
+.navbar-custom .dropdown-items-divide-hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.75rem auto 0.725rem auto;
+	border: none;
+	background-color: #c4d8dc;
+	opacity: 0.2;
+}
+/* end of dropdown menu */
+
+.navbar-custom .nav-item .btn-outline-sm {
+	margin-top: 0.25rem;
+	margin-bottom: 1.375rem;
+	margin-left: 0.5rem;
+	border: 0.125rem solid #fff;
+	color: #fff;
+}
+
+.navbar-custom .nav-item .btn-outline-sm:hover {
+	background-color: #fff;
+	color: #124061;
+}
+
+.navbar-custom .navbar-toggler {
+	padding: 0;
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}  
+
+/*********************/
+/*    03. Header     */
+/*********************/
+.header {
+  background-color: #124061;
+}
+
+.header .header-content {
+	padding-top: 12rem;
+	padding-bottom: 4rem;
+	text-align: center;
+}
+
+.header .text-container {
+	margin-bottom: 3rem;
+}
+
+.header h1 {
+	margin-bottom: 1rem;
+	color: #fff;
+	font-size: 2.5rem;
+	line-height: 3rem;
+}
+
+.header .p-large {
+	margin-bottom: 2rem;
+	color: #f3f7fd;
+}
+
+.header .fa-php{color: #ffffff; font-size: 30em;}
+
+.header .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.125rem;
+	margin-left: 0.5rem;
+	border-color: #f3f7fd;
+	background-color: #f3f7fd;
+	color: #124061;
+}
+
+.header .btn-solid-lg:hover {
+	background: transparent;
+	color: #f3f7fd;
+}
+
+.header .btn-outline-lg {
+	border-color: #f3f7fd;
+	color: #f3f7fd;
+}
+
+.header .btn-outline-lg:hover {
+	background-color: #f3f7fd;
+	color: #124061;
+}
+
+.header-frame {
+	margin-top: -1px; /* To remove white margin in FF */
+	width: 100%;
+	height: 2.25rem;
+}
+
+.perfil-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+/*********************/
+/*    04. Serviços     */
+/*********************/
+#servicos{
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+#servicos .card-deck {
+  text-align: center;
+  max-width: 960px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#servicos .card-deck .card{margin-bottom: 1.5em;}
+
+/*********************/
+/*    05. Clientes     */
+/*********************/
+#clientes{
+  padding-top: 8em;
+  padding-bottom: 8em;
+  background-color: rgba(221, 202, 198, 0.1);
+}
+
+#clientes .col-md-3{padding-right: 0; margin-bottom: 1.5em;}
+
+#clientes .lead{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  max-width: 700px;
+  text-align: center;
+}
+
+#clientes img{
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+#clientes img:hover{opacity: 1;}
+#clientes img:last-child{margin-right: 0;}
+
+/*********************/
+/*    06. Parceiros     */
+/*********************/
+#parceiros{
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+#parceiro .lead{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  max-width: 700px;
+  text-align: center;
+}
+
+#parceiros header{
+  text-align: center;
+}
+
+#parceiros img{
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+#parceiros img:hover{
+  opacity: .5;
+}
+
+/*********************/
+/*    07. time     */
+/*********************/
+#time{
+  padding-top: 8em;
+  padding-bottom: 8em;
+  text-align: center;
+  background-color: rgba(221, 202, 198, 0.1);
+}
+
+#time .col-md-3{margin-bottom: 4em; margin-right: 1em; background-color: #ffffff;}
+#time .col-md-3 img{margin-top: -2.5em; width: 5em;}
+
+#time .lead{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.5em;
+  max-width: 700px;
+  text-align: center;
+}
+
+#time .item h4{
+  margin-top: .5em;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/**********************/
+/*     08. Contatos     */
+/**********************/
+#contatos{
+  padding-top: 8em;
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+#contatos .lead{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  max-width: 700px;
+  text-align: center;
+}
+
+/**********************/
+/*     09. Redes Sociais     */
+/**********************/
+.redes-sociais{
+  padding-top: 4em;
+  padding-bottom: 4em;
+  text-align: center;
+}
+.redes-sociais i{
+    margin-right: .3em;
+}
+
+.redes-sociais i.fa-instagram{transition: all 0.5s ease;}
+.redes-sociais i.fa-instagram:hover{color: #e4405f; }
+.redes-sociais i.fa-twitter{transition: all 0.5s ease;}
+.redes-sociais i.fa-twitter:hover{color: #55acee; }
+.redes-sociais i.fa-facebook{transition: all 0.5s ease;}
+.redes-sociais i.fa-facebook:hover{color: #3b5999; }
+.redes-sociais i.fa-youtube{transition: all 0.5s ease;}
+.redes-sociais i.fa-youtube:hover{color: #cd201f; }
+/**********************/
+/*     10. Footer     */
+/**********************/
+.footer-frame {
+	width: 100%;
+	height: 1.5rem;
+}
+
+.footer {
+	padding-top: 3rem;
+	padding-bottom: 0.5rem;
+	background-color: #124061;
+}
+
+.footer .footer-col {
+	margin-bottom: 2.25rem;
+}
+
+.footer h4 {
+	margin-bottom: 0.625rem;
+	color: #fff;
+}
+
+.footer .list-unstyled,
+.footer p {
+	color: #d2d2d2;
+}
+.footer a {
+  color: #d2d2d2;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.footer a:hover {
+	color: #f3f7fd;
+}
+
+.footer i{color: #d2d2d2; margin-right: 0.2em;}
+
+.footer .footer-col.middle .list-unstyled .fas {
+	color: #fff;
+	font-size: 0.5rem;
+	line-height: 1.5rem;
+}
+
+.footer .footer-col.middle .list-unstyled .media-body {
+	margin-left: 0.5rem;
+}
+
+.footer .footer-col.last .list-unstyled .fas {
+	color: #fff;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+
+.footer .footer-col.last .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+.footer .footer-col.last .list-unstyled .fas.fa-globe {
+	margin-left: 1rem;
+	margin-right: 0.625rem;
+}
+
+
+/*************************/
+/*     11. Copyright     */
+/*************************/
+.copyright {
+	padding-top: 1rem;
+	padding-bottom: 0.375rem;
+	background-color: #124061;
+	text-align: center;
+}
+
+.copyright .p-small {
+	padding-top: 1.375rem;
+	border-top: 1px solid #d2d2d2;
+	color: #d2d2d2;
+}
+
+.copyright a {
+	color: #d2d2d2;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.copyright a:hover {
+	color: #ffffff;
+}
+
+  /**********************************/
+/*     12. Back Top     */
+/**********************************/
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 0.75rem;
+	bottom: 0.75rem;
+	display: none;
+	width: 2.625rem;
+	height: 2.625rem;
+	border-radius: 1.875rem;
+	background: #124061 url("../img/up-arrow.png") no-repeat center 47%;
+	background-size: 1.125rem 1.125rem;
+  text-indent: -9999px;
+  box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.3  );
+  transition: all 0.5s ease;
+}
+
+a:hover.back-to-top {
+  background-color: rgba(221, 202, 198, 1);
+}
+
+
+/* Min-width width 768px */
+@media (min-width: 768px) {
+	
+	/* General Styles */
+	.p-heading {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.h2-heading {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/* end of general styles */
+
+
+	/* Header */
+	.header .text-container {
+		margin-bottom: 4rem;
+	}
+
+	.header h1 {
+		font-size: 3.5rem;
+		line-height: 4.125rem;
+	}
+
+	.header .btn-solid-lg {
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+
+	.header-frame {
+		height: 5.5rem;
+	}
+	/* end of header */
+
+	/* Footer */
+	.footer-frame {
+		height: 5rem;
+	}
+	/* end of footer */
+}
+
+@media (min-width: 992px) {
+	
+	/* Navigation */
+	.navbar-custom {
+		padding: 2.125rem 1.5rem 2.125rem 2rem;
+        background: transparent;
+		box-shadow: none;
+	}
+
+	.navbar-custom .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar-custom .nav-item .nav-link {
+		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+	}
+	
+	.navbar-custom .nav-item .nav-link:hover,
+	.navbar-custom .nav-item .nav-link.active {
+		opacity: 1;
+	}
+
+	.navbar-custom.top-nav-collapse {
+    padding: 0.5rem 1.5rem 0.5rem 2rem;
+		background-color: #124061;
+		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
+	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
+		color: #fff;
+	}
+
+	.navbar-custom .dropdown-menu {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-top: 0.25rem solid rgba(0, 0, 0, 0);
+		border-radius: 0.25rem;
+	}
+
+	.navbar-custom.top-nav-collapse .dropdown-menu {
+		border-top: 0.25rem solid rgba(0, 0, 0, 0);
+		box-shadow: 0 0.375rem 0.375rem 0 rgba(0, 0, 0, 0.02);
+	}
+
+	.navbar-custom .dropdown-item {
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+
+	.navbar-custom .dropdown-items-divide-hr {
+		width: 84%;
+	}
+
+	.navbar-custom .nav-item .btn-outline-sm {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 1rem;
+	}
+	/* end of navigation */
+
+
+	/* General Styles */
+	.p-heading {
+		width: 65%;
+	}
+
+	.h2-heading {
+		width: 60%;
+	}
+	/* end of general styles */
+
+
+	/* Header */
+	.header .header-content {
+		text-align: left;
+	}
+
+	.header .text-container {
+		margin-top: 4rem;
+		margin-bottom: 0;
+	}
+
+	.header .image-container {
+		position: relative;
+		margin-top: 3rem;
+	}
+	
+	.header .image-container .img-wrapper {
+		position: absolute;
+		display: block;
+		width: 470px;
+	}
+
+	.header-frame {
+		height: 8rem;
+	}
+	/* end of header */
+}
+
+@media (min-width: 1200px) {
+	
+	/* General Styles */
+	.h2-heading {
+		width: 50%;
+	}
+	/* end of general styles */
+
+
+	/* Header */
+	.header .header-content {
+		padding-top: 11rem;
+		padding-bottom: 5rem;
+	}
+
+	.header .text-container {
+		margin-top: 5.5rem;
+		margin-right: 0.5rem;
+	}
+
+	.header .image-container {
+		margin-top: 1rem;
+		margin-left: 1.5rem;
+	}
+
+	.header .image-container .img-wrapper {
+		width: 630px;
+	}
+
+	.header-frame {
+		height: 9.375rem;
+	}
+	/* end of header */
+	
+	/* Footer */
+	.footer .footer-col.first {
+		margin-right: 1.5rem;
+	}
+
+	.footer .footer-col.middle {
+		margin-right: 0.75rem;
+		margin-left: 0.75rem;
+	}
+
+	.footer .footer-col.last {
+		margin-left: 1.5rem;
+	}
+	/* end of footer */ 
+}
