@@ -8,6 +8,7 @@ Projeto final baseado nas aulas sobre **HTML5**, **CSS3** e **Bootstrap** | Boot
 [Flaticon](www.flaticon.com/ "Flaticon")  
 [Pixabay](https://pixabay.com/pt/ "Pixabay")  
 [Freepik](https://br.freepik.com "Freepik")  
+[Paleta de Cores](https://color.adobe.com/pt/Orange-and-Blue-Corporate-color-theme-15108767 "Paleta de Cores")  
 [Bootstrap 4.1.3](https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css "Bootstrap 4.1.3")  
 [Font Awesome 5](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css "Font Awesome 5")  
 [jQuery Easing Plugin](http://gsgd.co.uk/sandbox/jquery/easing/ "jQuery Easing Plugin")  
