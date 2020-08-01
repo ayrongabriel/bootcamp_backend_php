@@ -25,7 +25,7 @@ if($_REQUEST['sair'])
             $exec = shell_exec("git pull origin master 2>&1");
             echo $exec;
 
-            $textoLog = PHP_EOL."Data: ".date(d."/".m."/".Y." - ".H.":".i.":".s);
+            $textoLog = PHP_EOL."Data: ".date("d/m/Y - H:i:s");
             $textoLog .= PHP_EOL.$exec;
 
             $arquivoLog = fopen('log.txt', 'a+');
